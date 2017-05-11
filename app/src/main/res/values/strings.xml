@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestFCM</string>
+    <string name="project_title">Secure\nAuthentication</string>
+    <string name="mobile_no">Enter Registered Web ID</string>
+    <string name="mobile_no_hint">Registered Mobile no</string>
+    <string name="register_device">Register Device</string>
+    <string name="fingerprint_ver">Figerprint Verification </string>
+    <string name="fingerprint_instruction">Please place your fingertip on the scanner to verify your identity </string>
+</resources>

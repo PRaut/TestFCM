@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "973315395870",
+    "firebase_url": "https://testfcm-283c2.firebaseio.com",
+    "project_id": "testfcm-283c2",
+    "storage_bucket": "testfcm-283c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973315395870:android:9ec0cd2ef32a426a",
+        "android_client_info": {
+          "package_name": "com.prat.testfcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973315395870-madck63ov6n2hdvv90ntv2l3bhbsl2is.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu--dRozWGXQlENfhco9VwiyB54qm96UI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
