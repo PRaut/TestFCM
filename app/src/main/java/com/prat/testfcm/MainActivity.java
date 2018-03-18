@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 } finally {
                     if (isRegistered()) {
-                        // startService(new Intent(this, NotificationListener.class);
                         startActivity(new Intent(MainActivity.this, LoginWithFingerprintActivity.class));
                         finish();
                     } else {

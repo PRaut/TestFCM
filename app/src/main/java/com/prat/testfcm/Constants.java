@@ -8,7 +8,7 @@ public class Constants {
     public static final String FIREBASE_APP = "https://simplifiedcoding.firebaseio.com/";
 
     //Constant to store shared preferences
-    public static final String SHARED_PREF = "secure_auth_app";
+    public static final String SHARED_PREF = "secure_auth_app_pref";
 
     //To store boolean in shared preferences for if the device is registered to not
     public static final String REGISTERED = "false";
