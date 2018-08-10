@@ -41,6 +41,7 @@ public class DisplayOTP extends AppCompatActivity implements OnProgressBarListen
 
    // SharedPreferences mypref = getSharedPreferences(Constants.SHARED_PREF, Context.MODE_PRIVATE);
      String mobno; // = mypref.getString(Constants.KEY_REG_MOBNO, "");
+    String mOTP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class DisplayOTP extends AppCompatActivity implements OnProgressBarListen
 
 
         final String OTP = generateOTP();
+        mOTP = OTP;
 
         final ProgressDialog pd = new ProgressDialog(this, ProgressDialog.STYLE_SPINNER);
         pd.setIndeterminate(true);
@@ -179,6 +181,8 @@ public class DisplayOTP extends AppCompatActivity implements OnProgressBarListen
                             Log.i("DELETED OTP SUCCESS", response);
                             if (response != null) {
                                 pd.dismiss();
+                                Toast.makeText(DisplayOTP.this, "Thanks", Toast.LENGTH_SHORT).show();
+                                finish();
                             }
                         }
                     }, new Response.ErrorListener() {
@@ -190,13 +194,14 @@ public class DisplayOTP extends AppCompatActivity implements OnProgressBarListen
                 @Override
                 protected Map<String, String> getParams() throws AuthFailureError {
                     Map<String, String> deleteOTP_param = new HashMap<>();
-                    deleteOTP_param.put("otp", null);
+                    deleteOTP_param.put("otp", mOTP);  // MOTP is passed to delete for respective mobile number
                     deleteOTP_param.put("mobno", mobno);
                     return deleteOTP_param;
                 }
             };
             MySingleton.getmInstance(DisplayOTP.this).addToRequestQueue(updateOTP_request);
         }
+
     }
 
 }
